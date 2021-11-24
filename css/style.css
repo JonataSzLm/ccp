@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+	--color_bk: rgba(228,236,249,255);
+	--color_1: rgba(201,209,223,255);
+	--color_2: ;
+
+	--font_size: 15px;
+	--font: 'Roboto', sans-serif;
+
+	--border_rad: 10px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+}
+
+a, p, h1, h2, h3, h4, label {
+	font-family: 'Roboto', sans-serif;
+}
+
+.width {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0 35%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color_bk);
+
+}
+.width h3, .width h4 {
+	font-weight: bold;
+}
+
+.titulo {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.borda {
+	border: 1px black solid;
+	background-color: var(--color_1);
+	border-radius: var(--border_rad);
+	padding: 25px;
+	width: 100%;/*576px*/
+	box-shadow: 0 0 .5em black;
+}
+
+.container {
+	border: 1px black solid;
+	background-color: var(--color_bk);
+	border-radius: var(--border_rad);
+	display: flex;
+	flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /*width: 526px*/
+}
+
+.formLogin {
+	width: 90%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	max-width: 325px;
+	padding: 0;
+}
+.container input {
+	display: flex;
+	/*flex: 0 2 100%;*/
+	width: 100%;
+	color:  black;
+	font-weight: bold;
+	margin: 0;
+	border: solid black 1px;
+	border-radius: 4px;
+	height: 33px;
+}
+.container p, .container a {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	font-size: var(--font_size);
+}
+
+#btnentrar {
+	font-family: 'Roboto', sans-serif;
+	font-size: calc(var(--font_size) + 5px);
+	background-color: var(--color_1);
+	justify-content: center;
+}
+#btnentrar:hover {
+	cursor: pointer;
+}
+.links {
+	width: 90% /*325px*/;
+	max-width: 325px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
+.links a {
+	margin-top: 3px;
+}
+
+.links a:hover {
+	color: black;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.logo {
+	margin: 35px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.logo img {
+	margin: 0 auto;
+	width: 120px;
+	height: auto;
+}
+.logo_2 {
+	margin: 35px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.logo_2 img {
+	margin: 0 auto;
+	width: 80px;
+	height: auto;
+}
+
