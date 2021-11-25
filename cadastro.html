@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<div class="width cadastro">
+		<div class="logo">
+			<img src="img/logo_ccp.png">
+			<div class="titulo"><h3>Cadastro do Comercio Porta a Porta</h3></div>
+		</div>
+		<div class="borda">
+			<div class="container">
+				<br>
+				<form class="formCadastro">
+					<div class="col_1">
+						<h4>Dados de Login</h4>
+						<p>Email:</p>
+						<input type="email" name="txtemail" id="txtemail">
+						<p>Confirmar Email:</p>
+						<input type="email" name="txtemail" id="txtemail">
+						<p>Senha:</p>
+						<input type="password" name="txtsenha" id="txtsenha">
+						<p>Confirmar Senha:</p>
+						<input type="password" name="txtsenha" id="txtsenha">
+					</div>
+					<div class="col_2">
+						<h4>Dados Pessoais</h4>
+						<p>Nome:</p>
+						<input type="text" name="txtnome" id="txtnome">
+						<p>CPF:</p>
+						<input type="text" name="txtcpf" id="txtcpf">
+						<p>Endereço:</p>
+						<input type="text" name="txtendereco" id="txtendereco">
+						<p>Cidade:</p>
+						<input type="text" name="txtcidade" id="txtcidade">
+						<p>Estado:</p>
+						<input type="text" name="txtestado" id="txtestado">
+						<p>Telefone:</p>
+						<input type="text" name="txttelefone" id="txttelefone">
+						<p>Area de Atuação:</p>
+						<select name="area">
+							<option value="3">Rifeiro</option>
+							<option value="2">Dono da Venda</option>
+							<option value="1">Fornecedor</option>
+						</select>
+						<p>Trabalhador formal ou iformal:</p>
+						<select class="formal">
+							<option value="formal">Formal</option>
+							<option value="informal">Informal</option>
+						</select>
+					</div>
+					<div class="col_3">
+						<input type="submit" name="btnCadastrar" id="btnCadastrar" value="Confirmar">
+					</div>
+				</form>
+				<br>
+			</div>
+		</div>
+		<div class="logo_2">
+			<img src="img/logo_allsystems.png">
+		</div>
+	</div>
+</body>
+</html>
