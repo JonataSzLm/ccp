@@ -64,31 +64,6 @@ a, p, h1, h2, h3, h4, label {
 	/*margin: 0 40% !important;*/
 } 
 
-@media screen and (max-width: 1400px) {
-	.titulo h3 {
-		font-size: 55px;
-	}
-	.width {
-		width: 80%;
-		height: 100%;
-	}
-	.logo img {
-		width: 240px;
-	}
-	.logo_2 > img {
-		width: 240px;
-	}
-	.formLogin h4 {
-		font-size: 50px;
-	} 
-	.input p, .links a {
-		font-size: 30px;
-	}
-	#btnentrar {
-		font-size: 30px;
-	}
-}
-
 .width h3, .width h4 {
 	font-weight: bold;
 }
@@ -139,11 +114,9 @@ a, p, h1, h2, h3, h4, label {
 .campo input, .campo option, .campo select {
 	display: flex;
 	color:  black;
-	font-weight: bold;
 	margin: 0;
 	border: solid black 1px;
 	border-radius: 4px;
-	
 }
 .campo p, .campo a {
 	font-weight: bold;
@@ -156,6 +129,7 @@ a, p, h1, h2, h3, h4, label {
 	font-family: 'Roboto', sans-serif;
 	background-color: var(--color_1);
 	justify-content: center;
+	font-weight: bold;
 }
 #btnentrar:hover {
 	cursor: pointer;
@@ -212,13 +186,45 @@ a, p, h1, h2, h3, h4, label {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: auto;
+	height: 15%;
 	width: auto;
+	max-width: 150px;
+	/*border: 2px solid red;*/
 }
 .logo_2 img {
 	margin: 0 auto;
-	width: 80px;
+	width: 100%;
 	height: auto;
+}
+
+/*  ---- Tela de Login RESPONSIVA ----  */
+
+@media screen and (max-width: 1400px) {
+	.titulo h3 {
+		font-size: 55px;
+	}
+	.width {
+		width: 80%;
+		height: 100%;
+	}
+	.logo img {
+		width: 240px;
+	}
+	.logo_2 {
+		max-width: 200px !important;
+	}
+	.formLogin h4 {
+		font-size: 50px;
+	} 
+	.input p, .links a {
+		font-size: 30px;
+	}
+	#btnentrar {
+		font-size: 30px;
+	}
+	.input input {
+		font-size: 30px;
+	}
 }
 
 /*  ---- Tela de Cadastro ----  */
