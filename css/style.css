@@ -65,10 +65,26 @@ a, p, h1, h2, h3, h4, label {
 	/*margin: 0 40% !important;*/
 } 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
 	.width {
-		width: 100%;
+		width: 80%;
 		height: 100%;
+	}
+	.logo {
+		margin: 15% 0;
+	}
+	.logo img {
+		width: 240px;
+	}
+	.logo_2 {
+		margin: 15% 0 0 0;
+	}
+	.logo_2 img {
+		width: 160px;
+	}
+	input {
+		height: 100px !important;
+		margin: 0 15px !important;
 	}
 }
 
@@ -126,7 +142,7 @@ a, p, h1, h2, h3, h4, label {
 	margin: 0;
 	border: solid black 1px;
 	border-radius: 4px;
-	height: auto;
+	height: 15%;
 }
 .campo p, .campo a {
 	font-weight: bold;
