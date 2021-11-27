@@ -13,66 +13,121 @@
 
 
 </head>
-<body>
-	<div class="width cadastro">
-		<div class="logo">
-			<img src="img/logo_ccp.png">
-			<div class="titulo"><h3>Cadastro do Comercio Porta a Porta</h3></div>
-		</div>
-		<div class="borda">
-			<div class="container">
-				<br>
-				<form class="formCadastro">
-					<div class="col_1">
-						<h4>Dados de Login</h4>
-						<p>Email:</p>
-						<input type="email" name="txtemail" id="txtemail">
-						<p>Confirmar Email:</p>
-						<input type="email" name="txtemail" id="txtemail">
-						<p>Senha:</p>
-						<input type="password" name="txtsenha" id="txtsenha">
-						<p>Confirmar Senha:</p>
-						<input type="password" name="txtsenha" id="txtsenha">
-					</div>
-					<div class="col_2">
-						<h4>Dados Pessoais</h4>
-						<p>Nome:</p>
-						<input type="text" name="txtnome" id="txtnome">
-						<p>CPF:</p>
-						<input type="text" name="txtcpf" id="txtcpf">
-						<p>Endereço:</p>
-						<input type="text" name="txtendereco" id="txtendereco">
-						<p>Cidade:</p>
-						<input type="text" name="txtcidade" id="txtcidade">
-						<div class="">
-							<p>Estado:</p>
-							<input type="text" name="txtestado" id="txtestado">
-							<p>Telefone:</p>
-							<input type="text" name="txttelefone" id="txttelefone">
-						</div>
-						<p>Area de Atuação:</p>
-						<select name="area">
-							<option selected></option>
-							<option value="3">Rifeiro</option>
-							<option value="2">Dono da Venda</option>
-							<option value="1">Fornecedor</option>
-						</select>
-						<p>Trabalhador formal ou iformal:</p>
-						<select class="formal">
-							<option selected></option>
-							<option value="formal">Formal</option>
-							<option value="informal">Informal</option>
-						</select>
-					</div>
-					<div class="col_3">
-						<input type="submit" name="btnCadastrar" id="btnCadastrar" value="Confirmar">
-					</div>
-				</form>
-				<br>
+<body id="pgCadastro">
+	<div class="body" id="bodyCad">
+		<div class="" id="widthCad">
+			<div class="logo">
+				<img src="img/logo_ccp.png">
+				<div class="titulo"><h3>Cadastro do Comercio Porta a Porta</h3></div>
 			</div>
-		</div>
-		<div class="logo_2">
-			<img src="img/logo_allsystems.png">
+			<div class="borda" id="cadastro">
+				<div class="campo">
+					<form class="formCadastro">
+						<div class="col_1">
+							<h4>Dados de Login</h4>
+							<div class="inputCad">
+								<p>Email:</p>
+								<input required type="email" name="txtemail" id="txtemail" placeholder="Seu Email">
+							</div>
+							<div class="inputCad">
+								<p>Confirmar Email:</p>
+								<input required type="email" name="txtemail" id="txtemail" placeholder="Confirme seu Email">
+							</div>
+							<div class="inputCad">	
+								<p>Senha:</p>
+								<input required type="password" name="txtsenha" id="txtsenha" placeholder="Digite sua senha">
+							</div>
+							<div class="inputCad">
+								<p>Confirmar Senha:</p>
+								<input required type="password" name="txtsenha" id="txtsenha" placeholder="Confirme sua senha">
+							</div>
+						</div>
+						<div class="col_2">
+							<h4>Dados Pessoais</h4>
+							<div class="inputCad">	
+								<p>Nome:</p>
+								<input required type="text" name="txtnome" id="txtnome" placeholder="Nome Completo">
+							</div>
+							<div class="inputCad">
+								<p>CPF:</p>
+								<input required type="text" name="txtcpf" id="txtcpf" placeholder="Seu CPF">
+							</div>
+							<div class="inputCad">
+								<p>Endereço:</p>
+								<input required type="text" name="txtendereco" id="txtendereco" placeholder="Seu Endereço">
+							</div>
+							<div class="in2">
+								<div class="inputCad">
+									<p>Cidade:</p>
+									<input required type="text" name="txtcidade" id="txtcidade" placeholder="Sua Cidade">
+								</div>
+								<div class="inputCad">
+									<p>Estado:</p>
+									<select required id="UF" name="UF">
+									    <option value="UF" selected disabled hidden></option>
+									    <option value="AC">AC</option>
+									    <option value="AL">AL</option>
+									    <option value="AP">AP</option>
+									    <option value="AM">AM</option>
+									    <option value="BA">BA</option>
+									    <option value="CE">CE</option>
+									    <option value="DF">DF</option>
+									    <option value="ES">ES</option>
+									    <option value="GO">GO</option>
+									    <option value="MA">MA</option>
+									    <option value="MS">MS</option>
+									    <option value="MT">MT</option>
+									    <option value="MG">MG</option>
+									    <option value="PA">PA</option>
+									    <option value="PB">PB</option>
+									    <option value="PR">PR</option>
+									    <option value="PE">PE</option>
+									    <option value="PI">PI</option>
+									    <option value="RJ">RJ</option>
+									    <option value="RN">RN</option>
+									    <option value="RS">RS</option>
+									    <option value="RO">RO</option>
+									    <option value="RR">RR</option>
+									    <option value="SC">SC</option>
+									    <option value="SP">SP</option>
+									    <option value="SE">SE</option>
+									    <option value="TO">TO</option>
+									 </select>
+								</div>
+							</div>
+							<div class="in2">
+								<div class="inputCad">
+										<p>Telefone:</p>
+										<input required type="text" name="txttelefone" id="txttelefone" placeholder="(DDD) 9 9999-9999">
+								</div>
+								<div class="inputCad">
+									<p>Area de Atuação:</p>
+									<select required name="area">
+										<option value="" selected disabled hidden></option>
+										<option value="3">Colocador</option>
+										<option value="2">Dono de Venda</option>
+										<option value="1">Fornecedor</option>
+									</select>
+								</div>
+							</div>
+							<div class="inputCad">
+								<p>Trabalhador formal ou iformal:</p>
+								<select required class="formal">
+									<option value="" selected disabled hidden></option>
+									<option value="formal">Formal</option>
+									<option value="informal">Informal</option>
+								</select>
+							</div>
+						</div>
+						<div class="col_3">
+							<input required type="submit" name="btnCadastrar" id="btnCadastrar" value="Confirmar">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="logo_2" id="logo2Cad">
+				<img src="img/logo_allsystems.png">
+			</div>
 		</div>
 	</div>
 </body>

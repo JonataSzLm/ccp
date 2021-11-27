@@ -11,13 +11,12 @@
 	--border_rad: 10px;
 }
 
-body {
+#pgLogin {
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
 	font-family: var(--font);
-	
 }
 .body {
 	width: 100%;
@@ -53,6 +52,7 @@ a, p, h1, h2, h3, h4, label {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	max-width: 750px;
 }
 .logo img {
 	margin: 0 auto;
@@ -60,11 +60,15 @@ a, p, h1, h2, h3, h4, label {
 	height: auto;
 }
 
+.logo h3 {
+	font-size: 30px;
+}
+
 .login {
 	/*margin: 0 40% !important;*/
 } 
 
-.width h3, .width h4 {
+h3, h4 {
 	font-weight: bold;
 }
 
@@ -72,6 +76,8 @@ a, p, h1, h2, h3, h4, label {
 	text-align: center;
 	width: 100%;
 	height: 100%;
+	max-width: 750px;
+	font-size: 30px;
 }
 
 .borda {
@@ -91,7 +97,6 @@ a, p, h1, h2, h3, h4, label {
 	border-radius: var(--border_rad);
     padding: 0;
     width: 100%;
-    height: 100%;
     /*width: 526px*/
 }
 
@@ -189,7 +194,6 @@ a, p, h1, h2, h3, h4, label {
 	height: 15%;
 	width: auto;
 	max-width: 150px;
-	/*border: 2px solid red;*/
 }
 .logo_2 img {
 	margin: 0 auto;
@@ -200,69 +204,103 @@ a, p, h1, h2, h3, h4, label {
 /*  ---- Tela de Login RESPONSIVA ----  */
 
 @media screen and (max-width: 1400px) {
-	.titulo h3 {
-		font-size: 55px;
-	}
-	.width {
-		width: 80%;
-		height: 100%;
-	}
-	.logo img {
-		width: 240px;
-	}
-	.logo_2 {
-		max-width: 200px !important;
-	}
-	.formLogin h4 {
-		font-size: 50px;
-	} 
-	.input p, .links a {
-		font-size: 30px;
-	}
-	#btnentrar {
-		font-size: 30px;
-	}
-	.input input {
-		font-size: 30px;
-	}
+	#pgLogin .titulo h3 {
+			font-size: 55px;
+		}
+	#pgLogin .width {
+			width: 80%;
+			height: 100%;
+		}
+	#pgLogin .logo img {
+			width: 240px;
+		}
+	#pgLogin .logo_2 {
+			max-width: 200px !important;
+		}
+	#pgLogin .formLogin h4 {
+			font-size: 50px;
+		} 
+	#pgLogin .input p, .links a {
+			font-size: 30px;
+		}
+	#pgLogin #btnentrar {
+			font-size: 30px;
+		}
+	#pgLogin .input input {
+			font-size: 30px;
+		}
 }
 
 /*  ---- Tela de Cadastro ----  */
 
-.cadastro {
-	padding: 20% !important;
-	height: 100vh;
+#pgCadastro {
+	height: 100%;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+}
+
+#bodyCad {
+	height: 100%;
+	width: 100%;
+}
+
+#cadastro {
+	height: auto !important;
+	width: 100%;
+	margin-top: 25px;
+}
+
+#widthCad {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .formCadastro {
 	width: 100%;
+	height: 100%;
 	margin: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 0;
+	align-items: flex-start;
+}
+
+.formCadastro p {
+	width: 90%;
 }
 
 .formCadastro input {
-	/*flex: 0 2 100%;*/
-	width: 95%;
+	
+}
+
+.formCadastro h4 {
+	text-align: center;
+	margin: 10% 0 0 0;
+	width: 100%;
+	height: 20%;
 }
 
 .col_1, .col_2 {
-	width: 50%;
 	padding: 0 5%;
+	height: auto;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-.col_1 {
-	border-right: solid 1px lightgray;
+	justify-content: ;
+	flex-wrap: nowrap;
 }
 
 .col_3 {
-	margin-top: 20px;
 	width: 100%;
+	padding: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -273,19 +311,101 @@ a, p, h1, h2, h3, h4, label {
 	width: 60% !important;
 }
 
-#txtestado, #txttelefone{
-	width: 45%;
+#txttelefone, #txtcidade {
+	width: 90%;
+}
+
+.inputCad {
+	width: 90%;
+	height: 15%;
+}
+.inputCad input, .inputCad select, .inputCad option {
+	width: 100%;
+	height: 40%;
+	min-height: 33px;
+	border: 1px solid black;
+	background-color: white;
+}
+.inputCad p {
+	height: 30%;
+}
+
+.in2 {
+	width: 90%;
+	height: 15%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.in2 .inputCad {
+	width: 50%;
+	height: 100%;
 }
 
 
 #btnCadastrar {
 	font-family: 'Roboto', sans-serif;
-	font-size: calc(var(--font_size) + 5px);
+	font-size: var(--font_size);
 	background-color: var(--color_1);
 	justify-content: center;
-	max-width: 200px;
-
+	width: 200px;
+	font-weight: bold;
+	margin: 10px 0;
 }
 #btnCadastrar:hover {
 	cursor: pointer;
 }
+
+
+
+/*   ---- Tela de Cadastro RESPONSIVA ----   */
+
+@media screen and (min-width:  1000px) {
+	.inputCad {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width:  1000px) {
+	#pgCadastro {
+		height: 160vh;
+		overflow: scroll;
+	}
+	#pgCadastro .col_1, .col_2 {
+		width: 100%;
+		
+	}
+	.col_1 {
+		height: 1000px;
+	}
+	.col_2 {
+		height: 1100px;
+	}
+	.col_3 {
+		height: 60px;
+	}
+	#cadastro {
+		height: auto;
+		/*max-height: 10000px;*/
+		
+	}
+	#pgCadastro .logo img {
+			width: 240px;
+		}
+	#pgCadastro .titulo h3 {
+			font-size: 55px;
+		}
+	#pgCadastro .logo_2 {
+			max-width: 200px !important;
+		}
+	#pgCadastro .formCadastro h4 {
+			font-size: 50px;
+		} 
+	.inputCad p, .inputCad input, .inputCad select, #btnCadastrar {
+		font-size: 30px;
+	}
+	#btnCadastrar {
+		margin-bottom: 50px;
+	}
+}
+
