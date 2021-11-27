@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root{
 	--color_bk: rgba(228,236,249,255);
 	--color_1: rgba(201,209,223,255);
@@ -16,6 +17,19 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: var(--font);
+	
+}
+.body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	background: var(--color_bk);
 }
 
 a, p, h1, h2, h3, h4, label {
@@ -25,19 +39,18 @@ a, p, h1, h2, h3, h4, label {
 /* ---- Tela de Login ---- */
 
 .width {
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
+	width: auto;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--color_bk);
+	border: red 2px solid;
 }
 
 .logo {
-	margin: 35px 0;
+	margin: 5% 0;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -49,8 +62,14 @@ a, p, h1, h2, h3, h4, label {
 }
 
 .login {
-	padding: 0 35% !important;
+	/*margin: 0 40% !important;*/
 } 
+
+@media screen and (max-width: 600px) {
+	.width {
+		width: 80%;
+	}
+}
 
 .width h3, .width h4 {
 	font-weight: bold;
@@ -63,12 +82,13 @@ a, p, h1, h2, h3, h4, label {
 }
 
 .borda {
+	display: flex;
 	border: 1px black solid;
 	background-color: var(--color_1);
 	border-radius: var(--border_rad);
 	padding: 25px;
-	width: 100%;/*576px*/
 	box-shadow: 0 0 .5em black;
+	width: 100%;
 }
 
 .container {
@@ -80,6 +100,8 @@ a, p, h1, h2, h3, h4, label {
     padding: 0;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     /*width: 526px*/
 }
 
@@ -89,12 +111,11 @@ a, p, h1, h2, h3, h4, label {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	max-width: 325px;
 	padding: 0;
 }
 
 .formLogin input {
-	flex: 0 2 100%;
+	flex: 0 1 100%;
 }
 
 .container input, .container option, .container select {
@@ -104,7 +125,7 @@ a, p, h1, h2, h3, h4, label {
 	margin: 0;
 	border: solid black 1px;
 	border-radius: 4px;
-	height: 33px;
+	height: auto;
 }
 .container p, .container a {
 	font-weight: bold;
@@ -127,7 +148,6 @@ a, p, h1, h2, h3, h4, label {
 
 .links {
 	width: 90% /*325px*/;
-	max-width: 325px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -146,7 +166,7 @@ a, p, h1, h2, h3, h4, label {
 }
 
 .logo_2 {
-	margin: 35px 0;
+	margin: 5% 0 0 0;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -160,7 +180,8 @@ a, p, h1, h2, h3, h4, label {
 /*  ---- Tela de Cadastro ----  */
 
 .cadastro {
-	padding: 0 20% !important;
+	padding: 20% !important;
+	height: 100vh;
 }
 
 .formCadastro {
@@ -204,6 +225,10 @@ a, p, h1, h2, h3, h4, label {
 
 #txtestado, #txttelefone{
 	width: 45%;
+}
+
+.input {
+
 }
 
 #btnCadastrar {
