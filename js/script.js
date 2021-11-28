@@ -48,3 +48,35 @@ function alteraModal(op) {
 		fb.innerHTML = "Pergunta Enviada com Sucesso!"
 	}
 }
+
+function anima() {
+	let el = document.getElementById('perg');
+	var delay = 1000;
+	let txt = document.getElementById('quest');
+	el.style.cssText =
+		'animation-name: disable;' +
+		'animation-duration: 1s;' +
+		'animation-timing-function: ease;' +
+		'animation-delay: 0;' +
+		'animation-iteration-count: 1;' +
+		'animation-direction: normal;' +
+		'animation-fill-mode: both;' +
+		'animation-play-state: running;';
+
+	
+
+	setTimeout(function() {
+		txt.innerHTML = 'Outra Pergunta?';
+  		el.style.cssText =
+		'animation-name: enable;' +
+		'animation-duration: 2s;' +
+		'animation-timing-function: ease-in;' +
+		'animation-delay: 2s;' +
+		'animation-iteration-count: 1;' +
+		'animation-direction: normal;' +
+		'animation-fill-mode: both;' +
+		'animation-play-state: running;';
+	}, delay);
+
+
+}

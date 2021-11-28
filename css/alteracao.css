@@ -71,6 +71,7 @@ h3, h4, p {
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
+	text-align: center;
 }
 .limite h4 {
 	font-weight: bold;

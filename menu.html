@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menu do Administrador</title>
+	<link href="icones/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/alteracao.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="corpo">
+		<div class="logo">
+			<div class="left">
+				<img src="img/logo_ccp.png">
+				<p>Cadastro do Comercio Porta a Porta</p>
+			</div>
+			<div class="right">
+				<div class="r2">
+					<img src="img/perfil.svg">
+					<p>Bem vindo, Administrador</p>
+				</div>
+				<div class="r2">
+					<img src="img/sair.svg">
+					<p>Sair</p>
+				</div>
+			</div>
+		</div>
+		<div class="limite">
+			<h3>Iremos fazer algumas perguntas importantes das quais devem ser respondidas</h3>
+			<div class="borda" id="perg">
+				<div class="opcao" id="pergunta">
+					<p id="quest">Pergunta de frase grande para testar o container?</p>
+					<textarea name="resp" id="resp" placeholder="Digite aqui a sua resposta."></textarea>
+					<div class="btnperg">
+						<a href="#" onclick="anima()">Pular esta pergunta</a>
+						<input type="submit" value="Responder" id="btnResponder" onclick="anima()">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- Modal de Boas vindas -->
+
+<div class="modal fade" id="ModalWellcome" aria-hidden="true" tabindex="-1" aria-labelledby="ModalWellcome">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <h5 class="modal-title text-center">Bem Vindo!</h5>
+          <br><br>
+          <p>Iremos realizar algumas perguntas para coleta de informações, não se preocupe são apenas para melhorar o comerico porta a porta.</p>
+          <br><br>
+	      <button type="button" class="btn_modal"
+	          data-bs-dismiss="modal" aria-label="Close">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

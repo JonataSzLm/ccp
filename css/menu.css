@@ -1,4 +1,4 @@
-.limite a {
+.limite .a {
 	width: 20% !important;
 	margin: 2% 5%;
 	height: 15% !important;
@@ -52,7 +52,7 @@
 /*  ---- Responsividade -----  */
 
 @media screen and (max-width: 1000px) {
-	.limite a {
+	.limite .a {
 		margin: 5% 6%;
 		min-height: 300px !important;
 	}
@@ -64,6 +64,16 @@
 	}
 	.opcao p {
 		font-size: 25px;
+	}
+	#perg {
+		width: 80% !important;
+		margin-bottom: 25% !important;
+	}
+	#quest {
+		font-size: 40px !important;
+	}
+	#btnResponder, .btnperg a {
+		font-size: 30px;
 	}
 }
 
@@ -107,4 +117,73 @@
 	height: 100px;
 	width: 100%;
 	margin: 0 2% 0 2%;
+}
+
+
+
+#perg {
+	width: 40%;
+	height: auto !important;
+	margin-bottom: 5%;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+#pergunta {
+	padding: 50px;
+	display: flex;
+	align-items: center !important;
+	justify-content: center !important;
+}
+#pergunta a {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+#pergunta a:hover {
+	color: black;
+	text-decoration: underline;
+}
+#btnResponder {
+	min-width: 200px;
+	max-height: 70px !important;
+	font-weight: bold;
+}
+#quest {
+	font-size: 25px;
+	margin: 30px;
+}
+#resp {
+	width: 80%;
+	height: 100px;
+}
+.btnperg {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	margin-bottom: 50px;
+	margin: 20px 0;
+}
+#resp, #btnResponder {
+	border: 1px black solid;
+	background-color: white;
+	color: black;
+	font-family: var(--font);
+}
+
+.animacao {
+	animation: disable 1s forwards;
+}
+
+@keyframes disable{
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes enable{
+	to {
+		opacity: 1;
+	}
 }
