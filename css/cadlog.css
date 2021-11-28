@@ -1,0 +1,423 @@
+
+#pgLogin {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+}
+.body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	background: var(--color_bk);
+}
+
+
+/* ---- Tela de Login ---- */
+
+.width {
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logo {
+	/*margin: 5% 0;*/
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 750px;
+}
+.logo img {
+	margin: 0 auto;
+	width: 120px;
+	height: auto;
+}
+
+.logo h3 {
+	font-size: 30px;
+}
+
+.login {
+	/*margin: 0 40% !important;*/
+} 
+
+h3, h4 {
+	font-weight: bold;
+}
+
+.titulo {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	max-width: 750px;
+	font-size: 30px;
+}
+
+.borda {
+	height: 55%;
+}
+
+.campo {
+	border: 1px black solid;
+	background-color: var(--color_bk);
+	border-radius: var(--border_rad);
+    padding: 0;
+    width: 100%;
+    /*width: 526px*/
+}
+
+.formLogin {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding: 0;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.formLogin p {
+	width: 90%;
+}
+
+.campo input, .campo option, .campo select {
+	display: flex;
+	color:  black;
+	margin: 0;
+	border: solid black 1px;
+	border-radius: 4px;
+}
+.campo p, .campo a {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	margin: 0;
+}
+
+#btnentrar {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--color_1);
+	justify-content: center;
+	font-weight: bold;
+}
+#btnentrar:hover {
+	cursor: pointer;
+}
+
+.formLogin h4 {
+	text-align: center;
+	margin: 10% 0 0 0;
+	width: 100%;
+	height: 20%;
+}
+
+.input {
+	width: 90%;
+	height: 25%;
+}
+.input input {
+	width: 100%;
+	height: 30%;
+	min-height: 33px;
+}
+.input p {
+	height: 30%;
+}
+
+.links {
+	width: 90% /*325px*/;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	height: 25%;
+}
+.links input {
+	width: 100%;
+	height: 30%;
+	min-height: 33px;
+}
+
+.links a {
+	margin: 2% 0 38% 0;
+	height: 30%;
+}
+
+.links a:hover {
+	color: black;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.logo_2 {
+	/*margin: 5% 0 0 0;*/
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 15%;
+	width: auto;
+	max-width: 150px;
+}
+.logo_2 img {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+/*  ---- Tela de Login RESPONSIVA ----  */
+
+@media screen and (max-width: 1400px) {
+	#pgLogin .titulo h3 {
+			font-size: 55px;
+		}
+	#pgLogin .width {
+			width: 80%;
+			height: 100%;
+		}
+	#pgLogin .logo img {
+			width: 240px;
+		}
+	#pgLogin .logo_2 {
+			max-width: 200px !important;
+		}
+	#pgLogin .formLogin h4 {
+			font-size: 50px;
+		} 
+	#pgLogin .input p, .links a {
+			font-size: 30px;
+		}
+	#pgLogin #btnentrar {
+			font-size: 30px;
+		}
+	#pgLogin .input input {
+			font-size: 30px;
+		}
+}
+
+/*  ---- Tela de Cadastro ----  */
+
+#pgCadastro {
+	height: 100%;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font);
+}
+
+#bodyCad {
+	height: 100%;
+	width: 100%;
+}
+
+#cadastro {
+	height: auto !important;
+	width: 100%;
+	margin-top: 25px;
+}
+
+#widthCad {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.formCadastro {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	align-items: flex-start;
+}
+
+.formCadastro p {
+	width: 90%;
+}
+
+.formCadastro input {
+	
+}
+
+.formCadastro h4 {
+	text-align: center;
+	margin: 10% 0 0 0;
+	width: 100%;
+	height: 20%;
+}
+
+.col_1, .col_2 {
+	padding: 0 5%;
+	height: auto;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: ;
+	flex-wrap: nowrap;
+}
+
+.col_3 {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#txtcpf {
+	width: 60% !important;
+}
+
+#txttelefone, #txtcidade {
+	width: 90%;
+}
+
+.inputCad {
+	width: 90%;
+	height: 15%;
+}
+.inputCad input, .inputCad select, .inputCad option {
+	width: 100%;
+	height: 40%;
+	min-height: 33px;
+	border: 1px solid black;
+	background-color: white;
+}
+.inputCad p {
+	height: 30%;
+}
+
+.in2 {
+	width: 90%;
+	height: 15%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.in2 .inputCad {
+	width: 50%;
+	height: 100%;
+}
+
+
+#btnCadastrar {
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--font_size);
+	background-color: var(--color_1);
+	justify-content: center;
+	width: 200px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+#btnCadastrar:hover {
+	cursor: pointer;
+}
+
+
+
+/*   ---- Tela de Cadastro RESPONSIVA ----   */
+
+@media screen and (min-width:  1000px) {
+	.inputCad {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width:  1000px) {
+	#pgCadastro {
+		height: 160vh;
+		overflow: scroll;
+	}
+	#pgCadastro .col_1, .col_2 {
+		width: 100%;
+		
+	}
+	.col_1 {
+		height: 1000px;
+	}
+	.col_2 {
+		height: 1100px;
+	}
+	.col_3 {
+		height: 60px;
+	}
+	#cadastro {
+		height: auto;
+		/*max-height: 10000px;*/
+		
+	}
+	#pgCadastro .logo img {
+			width: 240px;
+		}
+	#pgCadastro .titulo h3 {
+			font-size: 55px;
+		}
+	#pgCadastro .logo_2 {
+			max-width: 200px !important;
+		}
+	#pgCadastro .formCadastro h4 {
+			font-size: 50px;
+		} 
+	.inputCad p, .inputCad input, .inputCad select, #btnCadastrar {
+		font-size: 30px;
+	}
+	#btnCadastrar {
+		margin-bottom: 50px;
+	}
+}
+
+/*   ---- MODAL ----   */
+
+.modal h5{
+	margin: 10px;
+	font-size: 30px;
+}
+.center_modal {
+	background-color: var(--color_bk);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-family: var(--font);
+	padding: 20px;
+}
+.btn_modal {
+	border: 1px solid black;
+	min-width: 100px;
+	height: 33px;
+	border-radius: 8px;
+}
+.input_modal {
+	border: 1px solid black;
+	width: 100%;
+	margin: 10px;
+	height: 33px;
+	border-radius: 8px;
+	text-align: center;
+}
+.center_modal p, .center_modal h5, .center_modal button {
+	font-weight: bold;
+}

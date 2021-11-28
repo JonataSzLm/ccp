@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/cadlog.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
@@ -26,16 +27,16 @@
 						<h4>Acesso ao Portal</h4>
 						<div class="input">
 							<p>Email:</p>
-							<input type="email" name="txtemail" id="txtemail">
+							<input type="email" name="txtemail" id="txtemail" required placeholder="Digite seu Email">
 						</div>
 						<div class="input">	
 							<p>Senha:</p>
-							<input type="password" name="txtsenha" id="txtsenha">
+							<input type="password" name="txtsenha" id="txtsenha" required placeholder="Digite sua Senha">
 						</div>
 						<div class="links">	
 							<input type="submit" name="btnentrar" id="btnentrar" value="Entrar">						
 							<a href="cadastro.html">Criar conta</a>
-							<a href="#">Redefinir senha</a>
+							<a data-bs-toggle="modal" href="#ModalRedSenha">Redefinir senha</a>
 						</div>
 					</form>
 				</div>
@@ -47,3 +48,41 @@
 	</div>
 </body>
 </html>
+
+<!--  MODAIS:  -->
+
+<!--MODAL 1-->
+<div class="modal fade" id="ModalRedSenha" aria-hidden="true" tabindex="-1" aria-labelledby="ModalRedSenha">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <h5 class="modal-title text-center">Redefinir Senha:</h5>
+          <br><br><br><br>
+          <input type="email" name="email" class="input_modal" placeholder="Digite o Email Cadastrado">
+          <br><br>
+          <button class="btn_modal" data-bs-target="#ModalFeedback" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--MODAL DE FEEDBACK-->
+
+<div class="modal fade" id="ModalFeedback" aria-hidden="true" tabindex="-1" aria-labelledby="ModalFeedback">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <h5 class="modal-title text-center">Atenção!</h5>
+          <br><br><br>
+          <p class="text-center">Sua nova senha foi enviada para o e-mail cadastrado, por favor verifique a caixa de entrada ou spam.</p>
+          <br><br><br>
+          <button type="button" class="btn_modal"
+          data-bs-dismiss="modal" aria-label="Close">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
