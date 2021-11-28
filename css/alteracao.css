@@ -2,6 +2,9 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
+h3, h4, p {
+	font-weight: bold !important;
+}
 .corpo {
 	width: 100%;
 	height: 100%;
@@ -9,17 +12,45 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 .logo {
 	display: flex;
 	background-color: var(--color_1);
-	height: 10%;
+	height: 13%;
 	width: 100%;
 	border-bottom: 1px black solid;
 	flex-direction: row;
+	justify-content: space-between;
 	flex-wrap: nowrap;
+	max-height: 150px;
+}
+.right, .left {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
 	align-items: flex-end;
+}
+.right {
+	justify-content: flex-end;
+}
+.r2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	align-items: center;
+}
+.r2 img {
+	height: 60% !important;
+	margin: 0;
+}
+.r2 p {
+	font-size: 15px !important;
+	margin: 0;
 }
 .logo p {
 	font-size: 20px;
@@ -32,7 +63,7 @@ body {
 	margin: 5px;
 }
 .limite {
-	height: 100%;
+	height: 87%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -42,9 +73,11 @@ body {
 }
 .limite h4 {
 	font-weight: bold;
+	height: 5%;
+	margin: 0;
 }
 .borda {
-	height: 75%;
+	height: 85%;
 	width: 70%;
 }
 .conteudo {
@@ -54,27 +87,91 @@ body {
 	border-radius: var(--border_rad);
 	background-color: var(--color_bk);
 	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.formAltera {
+	width: 40%;
+	height: 100%;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
 }
+.formAltera h4 {
+	height: 5%;
+	margin: 2% 0;
+	font-weight: bold;
+}
+.formAltera input, .formAltera option, .formAltera select {
+	border: 1px black solid;
+	border-radius: 4px;
+}
+#btnAlterar {
+	min-width: 150px;
+	margin: 2% 0;
+	padding: 5px 0;
+	font-weight: bold;
+	font-family: var(--font);
+	font-size: var(--font_size);
+	background-color: var(--color_1);
+	justify-content: center;
+}
+.in2 {
+	width: 100%;
+	height: 12%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.in2 .input {
+	justify-content: flex-end !important;
+	height: 100% !important;
+	width: 45% !important;
+}
 .input {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-start;
 	text-align: left;
-	justify-content: center;
-	border: 1px red solid;
 	width: 100%;
-	height: 15%;
+	height: 12%;
 }
 .input p {
 	height: 20%;
 	width: 100%;
 }
-.input input {
-	width: 50%;
-	height: 50%;
+.input input, .input select, .input option {
+	width: 100%;
+	height: 40%;
+	min-height: 33px;
+	margin-bottom: 40%;
+}
+
+#txtcpf {
+	width: 55% !important;
+}
+
+
+/* ---- RESPONSIVIDAE ---- */
+@media screen and (max-width: 1000px) {
+	.formAltera {
+		width: 90%;
+	}
+	.limite h3 {
+		font-size: 50px;
+	}
+	.formAltera h4 {
+		font-size: 40px;
+	}
+	.input p {
+		font-size: 30px;
+	}
+	#btnAlterar {
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
 }

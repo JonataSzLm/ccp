@@ -16,18 +16,103 @@
 <body>
 	<div class="corpo">
 		<div class="logo">
-			<img src="img/logo_ccp.png">
-			<p>Cadastro do Comercio Porta a Porta</p>
+			<div class="left">
+				<img src="img/logo_ccp.png">
+				<p>Cadastro do Comercio Porta a Porta</p>
+			</div>
+			<div class="right">
+				<div class="r2">
+					<img src="img/perfil.svg">
+					<p>Bem vindo, Nome</p>
+				</div>
+				<div class="r2">
+					<img src="img/sair.svg">
+					<p>Sair</p>
+				</div>
+			</div>
 		</div>
 		<div class="limite">
-			<h4>Alterar Cadastro</h4>
+			<h3>Alterar Cadastro</h3>
 			<div class="borda">
 				<div class="conteudo">
-					<h4>Perfil</h4>
-					<div class="input">
-						<p>Nome:</p>
-						<input type="text" name="txtnome" id="txtnome">
-					</div>
+					<form class="formAltera">
+						<h4>Perfil</h4>
+						<div class="input">
+							<p>Nome:</p>
+							<input type="text" name="txtnome" id="txtnome">
+						</div>
+						<div class="input">
+							<p>CPF:</p>
+							<input type="text" name="txtcpf" id="txtcpf">
+						</div>
+						<div class="input">
+							<p>Endereço:</p>
+							<input type="text" name="txtendereco" id="txtendereco">
+						</div>
+						<div class="in2">
+							<div class="input">
+								<p>Cidade:</p>
+								<input type="text" name="txtcidade" id="txtcidade">
+							</div>
+							<div class="input">
+								<p>Estado:</p>
+								<select required id="uf" name="uf">
+									<option value="UF" selected disabled hidden></option>
+									<option value="AC">AC</option>
+									<option value="AL">AL</option>
+									<option value="AP">AP</option>
+									<option value="AM">AM</option>
+									<option value="BA">BA</option>
+									<option value="CE">CE</option>
+									<option value="DF">DF</option>
+									<option value="ES">ES</option>
+									<option value="GO">GO</option>
+									<option value="MA">MA</option>
+									<option value="MS">MS</option>
+									<option value="MT">MT</option>
+									<option value="MG">MG</option>
+									<option value="PA">PA</option>
+									<option value="PB">PB</option>
+									<option value="PR">PR</option>
+									<option value="PE">PE</option>
+									<option value="PI">PI</option>
+							  		<option value="RJ">RJ</option>
+								 	<option value="RN">RN</option>
+								 	<option value="RS">RS</option>
+							  		<option value="RO">RO</option>
+									<option value="RR">RR</option>
+									<option value="SC">SC</option>
+									<option value="SP">SP</option>
+									<option value="SE">SE</option>
+									<option value="TO">TO</option>
+								</select>
+							</div>
+						</div>
+						<div class="in2">
+							<div class="input">
+								<p>Telefone:</p>
+								<input type="text" name="txttelefone" id="txttelefone">
+							</div>
+							<div class="input">
+								<p>Area de Atuação:</p>
+								<select required name="area" id="area">
+									<option value="" selected disabled hidden></option>
+									<option value="3">Colocador</option>
+									<option value="2">Dono de Venda</option>
+									<option value="1">Fornecedor</option>
+								</select>
+							</div>
+						</div>
+						<div class="input">
+							<p>Trabalhador formal ou iformal:</p>
+								<select required class="formal" id="formal">
+									<option value="" selected disabled hidden></option>
+									<option value="formal">Formal</option>
+									<option value="informal">Informal</option>
+							</select>
+						</div>
+						<input type="submit" name="btnAlterar" id="btnAlterar" value="Alterar">
+					</form>
 				</div>
 			</div>
 		</div>

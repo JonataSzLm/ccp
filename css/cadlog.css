@@ -334,7 +334,20 @@ h3, h4 {
 	cursor: pointer;
 }
 
-
+.checkbox {
+	width: 100%;
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: flex-end;
+}
+.checkbox input {
+	margin: 0 4px 0 0;
+	min-width: 33px;
+	min-height: 33px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 4px;
+}
 
 /*   ---- Tela de Cadastro RESPONSIVA ----   */
 
@@ -379,11 +392,15 @@ h3, h4 {
 	#pgCadastro .formCadastro h4 {
 			font-size: 50px;
 		} 
-	.inputCad p, .inputCad input, .inputCad select, #btnCadastrar {
+	.inputCad p, .inputCad input, .inputCad select, #btnCadastrar, .checkbox p {
 		font-size: 30px;
 	}
 	#btnCadastrar {
 		margin-bottom: 50px;
+	}
+	.checkbox input {
+		height: 50px;
+		width: 50px;
 	}
 }
 
@@ -408,7 +425,7 @@ h3, h4 {
 	border: 1px solid black;
 	min-width: 100px;
 	height: 33px;
-	border-radius: 8px;
+	border-radius: 4px;
 	background-color: var(--color_1);
 }
 .btn_modal a {
@@ -428,7 +445,7 @@ h3, h4 {
 	width: 100%;
 	margin: 10px;
 	height: 33px;
-	border-radius: 8px;
+	border-radius: 4px;
 	text-align: center;
 }
 .center_modal p, .center_modal h5, .center_modal button {
@@ -436,6 +453,8 @@ h3, h4 {
 }
 .icon {
 	margin: 30px auto;
-	font-size: 70px;
+	width: 70px;
+	height: 70px;
+	/*font-size: 70px;*/
 	color: black;
 }
