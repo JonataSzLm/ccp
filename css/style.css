@@ -13,6 +13,11 @@
 
 body, a, p, h1, h2, h3, h4, label {
 	font-family: 'Roboto', sans-serif;
+	color: black;
+}
+body {
+	margin: 0;
+	padding: 0;
 }
 .borda {
 	display: flex;
