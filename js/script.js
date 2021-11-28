@@ -1,3 +1,6 @@
+var cont = -1;
+var perguntas = ['Pergunta1', 'Pergunta2', 'Pergunta3', 'Pergunta4', 'Pergunta5'];
+
 function alteraModal(op) {
 	let titulo = document.getElementById('tituloModal');
 	let p = document.getElementById('pModal');
@@ -49,7 +52,8 @@ function alteraModal(op) {
 	}
 }
 
-function anima() {
+function anima(pula) {
+	cont++;
 	let el = document.getElementById('perg');
 	var delay = 1000;
 	let txt = document.getElementById('quest');
@@ -63,20 +67,21 @@ function anima() {
 		'animation-fill-mode: both;' +
 		'animation-play-state: running;';
 
-	
 
-	setTimeout(function() {
-		txt.innerHTML = 'Outra Pergunta?';
-  		el.style.cssText =
-		'animation-name: enable;' +
-		'animation-duration: 2s;' +
-		'animation-timing-function: ease-in;' +
-		'animation-delay: 2s;' +
-		'animation-iteration-count: 1;' +
-		'animation-direction: normal;' +
-		'animation-fill-mode: both;' +
-		'animation-play-state: running;';
-	}, delay);
+	if (cont < perguntas.length) {
 
+		setTimeout(function() {
+			txt.innerHTML = perguntas[cont];
+	  		el.style.cssText =
+			'animation-name: enable;' +
+			'animation-duration: 2s;' +
+			'animation-timing-function: ease-in;' +
+			'animation-delay: 2s;' +
+			'animation-iteration-count: 1;' +
+			'animation-direction: normal;' +
+			'animation-fill-mode: both;' +
+			'animation-play-state: running;';
+		}, delay);
+	}
 
 }
