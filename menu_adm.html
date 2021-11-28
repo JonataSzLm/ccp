@@ -35,7 +35,7 @@
 		<div class="limite">
 			<h3>Menus do Administrador</h3>
 			<div class="limitemenu">
-				<a href="#">
+				<a onclick="alteraModal(1)" data-bs-toggle="modal" href="#ModalRelAN">
 				<div class="borda menus">
 					<div class="opcao">
 						<img class="imgmenu" src="img/meu-negocio.svg">
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 				</a>
-				<a href="#">
+				<a onclick="alteraModal(2)" data-bs-toggle="modal" href="#ModalRelAN">
 				<div class="borda menus">
 					<div class="opcao">
 						<img class="imgmenu" src="img/product.png">
@@ -51,7 +51,7 @@
 					</div>
 				</div>
 				</a>
-				<a href="#">
+				<a onclick="alteraModal(3)" data-bs-toggle="modal" href="#ModalRelAN">
 				<div class="borda menus">
 					<div class="opcao">
 						<img class="imgmenu" src="img/placeholder.svg">
@@ -59,17 +59,15 @@
 					</div>
 				</div>
 				</a>
-			<!-- </div>
-			<div class="limitemenu"> -->
-				<a href="#">
-				<div class="borda menus">
+				<a data-bs-toggle="modal" href="#ModalPerg">
+				<div onclick="alteraModal(5)" class="borda menus">
 					<div class="opcao">
 						<img class="imgmenu" src="img/perguntas.svg">
 						<p>Cadastrar Perguntas</p>
 					</div>
 				</div>
 				</a>
-				<a href="#">
+				<a onclick="alteraModal(6)" data-bs-toggle="modal" href="#ModalPerg2">
 				<div class="borda menus">
 					<div class="opcao">
 						<img class="imgmenu" src="img/send.png">
@@ -77,7 +75,7 @@
 					</div>
 				</div>
 				</a>
-				<a href="#">
+				<a onclick="alteraModal(4)" data-bs-toggle="modal" href="#ModalRelAN">
 				<div class="borda menus">
 					<div class="opcao">
 						<img class="imgmenu" src="img/relatorio.svg">
@@ -90,3 +88,125 @@
 	</div>
 </body>
 </html>
+
+<!-- Modais -->
+
+<!-- Modal Relatorio de Area de Negocio -->
+
+<div class="modal fade" id="ModalRelAN" aria-hidden="true" tabindex="-1" aria-labelledby="ModalRelAN">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <h5 class="modal-title text-center" id="tituloModal"></h5>
+          <span id="subtituloModal"></span>
+          <br><br><br><br>
+	       <form class="formRelAN">
+	          <p id="pModal"></p>
+	          <select required name="area" id="area">
+			  </select>
+			  <br><br>
+			  <p>Periodo:</p>
+			  <div class="lnModal">
+				  <span>De:</span>
+				  <input type="date" name="dataInicio" id="dataInicio">
+				  <span>Até:</span>
+				  <input type="date" name="dataFim" id="dataFim">
+			  </div>
+	        </form>
+	        <button class="btn_modal" data-bs-target="#ModalFeedbackOp1" data-bs-toggle="modal" data-bs-dismiss="modal">Emitir</button>	       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--MODAL DE FEEDBACK op1-->
+
+<div class="modal fade" id="ModalFeedbackOp1" aria-hidden="true" tabindex="-1" aria-labelledby="ModalFeedbackOp1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+		  <img src="img/verifica.svg" class="icon">        
+          <h5 class="modal-title text-center">Relatório Emitido com Sucesso!</h5>
+          <br><br>
+          <div>
+	          <button type="button" class="btn_modal"
+	          data-bs-dismiss="modal" aria-label="Close">Vizualizar</button>
+	          <button type="button" class="btn_modal"
+	          data-bs-dismiss="modal" aria-label="Close">Imprimir</button>
+	      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  Modal de Perguntas  -->
+<div class="modal fade" id="ModalPerg" aria-hidden="true" tabindex="-1" aria-labelledby="ModalPerg">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <h5 class="modal-title text-center">Cadastrar Pergunta:</h5>
+          <br><br><br><br>
+	       <form class="formRelAN">
+	          <textarea class="pergTxt" placeholder="Digite aqui a pergunta desejada..."></textarea>
+	        </form>
+	        <button class="btn_modal" data-bs-target="#ModalFeedbackOp2" data-bs-toggle="modal" data-bs-dismiss="modal">Cadastrar</button>	       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL FEEDBACK CAD PERG -->
+<div class="modal fade" id="ModalFeedbackOp2" aria-hidden="true" tabindex="-1" aria-labelledby="ModalFeedbackOp2">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+		  <img src="img/verifica.svg" class="icon">
+          <h5 class="modal-title text-center" id="feedbackModal"></h5>
+          <br><br>
+	      <button type="button" class="btn_modal"
+	          data-bs-dismiss="modal" aria-label="Close">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dispara Perguntas -->
+
+<div class="modal fade" id="ModalPerg2" aria-hidden="true" tabindex="-1" aria-labelledby="ModalPerg2">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <h5 class="modal-title text-center">Disparar Pergunta:</h5>
+          <br><br><br><br>
+	       <form class="formRelAN">
+	          <p>Pergunta:</p>
+	          <select>
+	          	<option value="" selected disabled hidden></option>
+	          	<option value="1">Qual é o local mais visitado em suas viagens?</option>
+	          	<option value="2">Qual Produto é o mais vendido?</option>
+	          	<option value="3">Qual a média de tempo que duram suas viagens?</option>
+	          </select>
+	          <p>Usuário a ser disparada:</p>
+	          <select>
+	          	<option value="" selected disabled hidden></option>
+	          	<option value="3">Colocador</option>
+				<option value="2">Dono de Viagem</option>
+				<option value="1">Fornecedor</option>
+				<option value="4">Outro</option>
+	          </select>
+	        </form>
+	        <button class="btn_modal" data-bs-target="#ModalFeedbackOp2" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>	       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

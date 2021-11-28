@@ -2,7 +2,7 @@
 	width: 20% !important;
 	margin: 2% 5%;
 	height: 15% !important;
-	min-height: 300px !important;
+	min-height: 200px !important;
 	min-width: 350px;
 	font-weight: bold;
 	text-decoration: none;
@@ -49,9 +49,12 @@
 	height: 50px;
 }
 
+/*  ---- Responsividade -----  */
+
 @media screen and (max-width: 1000px) {
 	.limite a {
 		margin: 5% 6%;
+		min-height: 300px !important;
 	}
 	.limite {
 		margin-bottom: 10%;
@@ -62,4 +65,46 @@
 	.opcao p {
 		font-size: 25px;
 	}
+}
+
+/*   ---- Modais ----   */
+
+#ModalRelAN .center_modal {
+	text-align: left !important;
+	align-items: center !important;
+	justify-content: space-around !important;
+}
+#ModalRelAN h5 {
+	margin: 0 !important;
+}
+.formRelAN {
+	width: 60%;
+	height: 90%;
+	margin: 0 5% 5% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+.lnModal {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.lnModal input {
+	margin: 15px;
+}
+#ModalFeedbackOp1 button {
+	margin: 15px;
+}
+.pergTxt {
+	border: solid 1px black;
+	border-radius: 4px;
+	background-color: white;
+	font-family: var(--font);
+	font-size: var(--font_size);
+	height: 100px;
+	width: 100%;
+	margin: 0 2% 0 2%;
 }

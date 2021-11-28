@@ -83,3 +83,33 @@ body {
 	/*font-size: 70px;*/
 	color: black;
 }
+
+
+/*  * MODAL RESPONSIVO *  */
+
+@media screen and (max-width: 1000px) {
+	.modal p, .modal span {
+		font-size: 30px !important;
+	}
+	.modal input, .modal option, .modal select, .modal button .modal textarea {
+		min-height: 50px !important;
+		min-width: 100px !important;
+		font-size: 30px !important;
+		background-color: white !important;
+		color: black !important;
+		border: solid 1px black !important;
+	}
+	.modal form {
+		width: 100% !important;
+	}
+	.modal button {
+		padding: 5px !important;
+		min-width: 200px !important;
+		font-size: 30px !important;
+		min-height: 50px !important;
+	}
+	textarea {
+		font-size: 30px !important;
+	}
+
+}
