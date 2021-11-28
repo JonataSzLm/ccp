@@ -33,7 +33,7 @@
 		</div>
 		<div class="limite">
 			<h3>Alterar Cadastro</h3>
-			<div class="borda">
+			<div class="borda" id="borda">
 				<div class="conteudo">
 					<form class="formAltera">
 						<h4>Perfil</h4>
@@ -98,8 +98,9 @@
 								<select required name="area" id="area">
 									<option value="" selected disabled hidden></option>
 									<option value="3">Colocador</option>
-									<option value="2">Dono de Venda</option>
+									<option value="2">Dono de Viagem</option>
 									<option value="1">Fornecedor</option>
+									<option value="4">Outro</option>
 								</select>
 							</div>
 						</div>
@@ -111,7 +112,7 @@
 									<option value="informal">Informal</option>
 							</select>
 						</div>
-						<input type="submit" name="btnAlterar" id="btnAlterar" value="Alterar">
+						<input type="submit" name="btnAlterar" id="btnAlterar" value="Alterar" data-bs-toggle="modal" href="#ModalFeedback3">
 					</form>
 				</div>
 			</div>
@@ -119,3 +120,22 @@
 	</div>
 </body>
 </html>
+
+<!--MODAL DE FEEDBACK-->
+
+<div class="modal fade" id="ModalFeedback3" aria-hidden="true" tabindex="-1" aria-labelledby="ModalFeedback3">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-body borda">
+      <div class="modal-content">
+        <div class="modal-body center_modal">
+          <!-- <i class="fas fa-check icon"></i> -->
+          <img src="img/verifica.svg" class="icon">
+          <p class="text-center">Cadastro alterado com sucesso!</p>
+          <br>
+          <a href="#"><button class="btn_modal">OK</button></a>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

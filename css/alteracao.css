@@ -26,13 +26,14 @@ h3, h4, p {
 	max-height: 150px;
 }
 .right, .left {
-	width: 50%;
+	width: 60%;
 	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 }
 .right {
+	width: 40% !important;
 	justify-content: flex-end;
 }
 .r2 {
@@ -49,17 +50,17 @@ h3, h4, p {
 	margin: 0;
 }
 .r2 p {
-	font-size: 15px !important;
+	font-size: 15px;
 	margin: 0;
 }
-.logo p {
+.left p {
 	font-size: 20px;
 	font-weight: bold;
-	margin: 7px;
+	margin: 10px;
 }
-.logo img {
-	height: auto;
-	width: 55px;
+.left img {
+	height: 100%;
+	width: auto;
 	margin: 5px;
 }
 .limite {
@@ -76,7 +77,7 @@ h3, h4, p {
 	height: 5%;
 	margin: 0;
 }
-.borda {
+#borda {
 	height: 85%;
 	width: 70%;
 }
@@ -149,6 +150,8 @@ h3, h4, p {
 	height: 40%;
 	min-height: 33px;
 	margin-bottom: 40%;
+	background-color: white;
+	color: black;
 }
 
 #txtcpf {
@@ -173,5 +176,17 @@ h3, h4, p {
 	#btnAlterar {
 		font-size: 30px;
 		margin-bottom: 15px;
+	}
+	.formAltera input, .formAltera select, .formAltera option {
+		font-size: 30px;
+	}
+	.r2 p {
+		font-size: 20px;
+	}
+	.left img {
+		width: 150px;
+	}
+	.left p {
+		font-size: 40px;
 	}
 }
