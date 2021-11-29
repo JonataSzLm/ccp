@@ -1,7 +1,6 @@
 
 #pgLogin {
 	width: 100vw;
-	height: 100vh;
 	margin: 0;
 	padding: 0;
 	font-family: var(--font);
@@ -180,8 +179,20 @@ h3, h4 {
 }
 
 /*  ---- Tela de Login RESPONSIVA ----  */
-
+@media screen and (min-width: 1000px) {
+	#pgLogin {
+		height: 100vh;
+	}
+}
 @media screen and (max-width: 1400px) {
+	#pgLogin {
+		height: 100%;
+	}
+}
+@media screen and (max-width: 1000px) {
+	#pgLogin {
+		height: 100%;
+	}
 	#pgLogin .titulo h3 {
 			font-size: 55px;
 		}

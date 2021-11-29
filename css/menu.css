@@ -1,6 +1,6 @@
 .limite .a {
 	width: 20% !important;
-	margin: 2% 5%;
+	margin: 3% 3%;
 	height: 15% !important;
 	min-height: 200px !important;
 	min-width: 350px;
@@ -10,6 +10,7 @@
 }
 .limite h3 {
 	height: 5%;
+	margin: 10px 0;
 }
 .limitemenu {
 	height: auto;
@@ -75,6 +76,9 @@
 	#btnResponder, .btnperg a {
 		font-size: 30px;
 	}
+	#limitePergunta {
+		height: 100vh;
+	}
 }
 
 /*   ---- Modais ----   */
@@ -124,13 +128,13 @@
 #perg {
 	width: 40%;
 	height: auto !important;
-	margin-bottom: 5%;
+	margin: 3% 0;
 	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
 #pergunta {
-	padding: 50px;
+	padding: 20px;
 	display: flex;
 	align-items: center !important;
 	justify-content: center !important;

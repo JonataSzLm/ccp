@@ -26,14 +26,14 @@ h3, h4, p {
 	max-height: 150px;
 }
 .right, .left {
-	width: 60%;
+	width: 40%;
 	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 }
 .right {
-	width: 40% !important;
+	margin-right: 1%;
 	justify-content: flex-end;
 }
 .r2 {
@@ -64,7 +64,7 @@ h3, h4, p {
 	margin: 5px;
 }
 .limite {
-	height: 87%;
+	height: auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -161,11 +161,17 @@ h3, h4, p {
 
 
 /* ---- RESPONSIVIDAE ---- */
+@media screen and (min-width: 1000px) {
+	#limite {
+		height: 100% !important;
+	}	
+}
+
 @media screen and (max-width: 1000px) {
 	.formAltera {
 		width: 90%;
 	}
-	.limite h3 {
+	#limite h3 {
 		font-size: 50px;
 	}
 	.formAltera h4 {
